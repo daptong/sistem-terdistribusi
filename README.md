@@ -1,16 +1,16 @@
-# LK01: Lingkungan Praktik Mandiri + Ujicoba Messaging Protocols
+# LK01: Lingkungan Praktik Mandiri + Ujicoba <i>Messaging Protocols</i>
 
-<div align="center">
-    <i>Muhammad Daffa Firmansyah - 256150100111010
-</div>
+
+Muhammad Daffa Firmansyah - 256150100111010
+<br> Sistem Terdistribusi A
 
 ## Contents
 
-- [MQTT](https://github.com/daptong/sistem-terdistribusi/tree/main/MQTT)
-- [REST](https://github.com/daptong/sistem-terdistribusi/tree/main/REST)
-- [RPC](https://github.com/daptong/sistem-terdistribusi/tree/main/RPC)
-- [reqresp](https://github.com/daptong/sistem-terdistribusi/tree/main/Reqresp)
-- [SOAP](https://github.com/daptong/sistem-terdistribusi/tree/main/SOAP)
-- [ZMQ](https://github.com/daptong/sistem-terdistribusi/tree/main/ZMQ)
-- [oneway](https://github.com/daptong/sistem-terdistribusi/tree/main/oneway)
+- [MQTT: Message Queuing Telemetry Transport](https://github.com/daptong/sistem-terdistribusi/tree/main/MQTT)
+- [REST: Representational State Transfer](https://github.com/daptong/sistem-terdistribusi/tree/main/REST)
+- [RPC: Remote Procedure Call](https://github.com/daptong/sistem-terdistribusi/tree/main/RPC)
+- [reqresp: Request and Response / TCP](https://github.com/daptong/sistem-terdistribusi/tree/main/Reqresp)
+- [SOAP: Simple Object Access Protocol](https://github.com/daptong/sistem-terdistribusi/tree/main/SOAP)
+- [ZMQ: ZeroMQ](https://github.com/daptong/sistem-terdistribusi/tree/main/ZMQ)
+- [oneway: UDP](https://github.com/daptong/sistem-terdistribusi/tree/main/oneway)
 - [upcall](https://github.com/daptong/sistem-terdistribusi/tree/main/upcall)
