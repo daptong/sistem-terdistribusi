@@ -49,3 +49,17 @@ topic = "sister/temp"
 ```
 
 ##
+
+<image src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGw2eXJ5eXpiNXNraGs1Y2R2eGlvOWcweXd6M3FmcnU5YnZhMzF6cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4w3vFYboLKB1n3X22V/giphy.gif"><br>
+Berikut adalah percobaan untuk fibonacci sequence. Publisher akan mengirimkan nilai fibonacci dengan nilai awal 0 (sudah di-define di sisi publisher), lalu publisher akan terus menerus mengirimkan nilai sesuai dengan aturan fibonacci. Nilai fibonacci terus dikirimkan ke subscriber hingga publisher menghentikan programnya sendiri, atau ketika subscriber memberhentikan programnya untuk menerima pesan dari publisher
+```bash
+if n <= 0:
+    return 0
+elif n == 1:
+    return 1:
+else:
+    a, b = 0, 1
+    for _ in range(2, n + 1):
+        a, b = b, a + b
+    return b
+```
