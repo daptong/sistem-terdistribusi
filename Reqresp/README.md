@@ -48,3 +48,5 @@ Disini client mengirimkan (PUSH) pesan ke server dan client mengonfirmasi (ACK) 
 Setelah server mengirimkan kembali pesan tersebut (baris dua) ke client, client mengonfirmasi (ACK) pesan tersebut
 
 ##
+<img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGp6ZDA1Zjd2Y3Q0ZTIxZHgxeXI1bTA2OWluZTdoazI4azdpYnJjdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/e1v6sL1FdCHONI0P4W/giphy.gif"><br>
+Berikut adalah percobaan pada program untuk mencari angka kuadrat dari angka yang diberikan oleh client. Client akan mengirimkan nilai integer (request) lalu server akan menghitung angka kuadrat dari nilai yang dikirimkan oleh client. Setelah dihitung, server akan mengirimkan kembali (response) nilai hasil perhitungannya ke client.
