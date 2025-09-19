@@ -66,3 +66,17 @@ Server merespons HTTP request tersebut dengan:
 
 - Baris 10-12:<br>
 Disini terdapat TCP flags yaitu FIN dan ACK, client mengirimkan sinyal untuk menutup TCP connection ke server lalu pada baris 12 server merespons tersebut dengan menutup koneksinya
+
+##
+
+<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2o3d3IwaHdpb3hlZWdtNDd1N2I3dHIydnh2bGYxNzZueHA2dmV1NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BNIDyL50n39YV6oHNX/giphy.gif"><br>
+Berikut adalah percobaan untuk program REST, dimana program ini, client tetap mengirimkan dua variabel nilai integer, yang defaultnya adalah 10 dan 5. Tetapi user juga dapat men-define dua nilai sendiri menggunakan parameter -a dan -b seperti dibawah
+```
+docker compose -f compose/rest.yml exec rest-client python client2.py -a 10 -b 10
+```
+
+Ketika client mengirimkan request ke server, server tetap menggunakan HTTP untuk menangkap method yang digunakan oleh client yaitu GET. Setelah itu client juga menggunakan JSONIFY untuk merangkum data yang dikirimkan ke server, yaitu endpoint, variabel a dan variabel b. 
+```
+r = requests.get(f"{BASE}/{endpoint}", params={'a': a, 'b': b}, timeout=3)
+data = r.json()
+```
