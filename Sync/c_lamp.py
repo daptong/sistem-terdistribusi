@@ -45,7 +45,7 @@ def main():
 
     # Membuat socket client dan menghubungkan ke Proses A
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    client_socket.connect(('localhost', 12345))
+    client_socket.connect(('0.0.0.0', 56789))
     print("Connected to Process A")
 
     # Terima pesan dari Proses A

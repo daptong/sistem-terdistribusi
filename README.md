@@ -16,3 +16,15 @@ Muhammad Daffa Firmansyah - 256150100111010
 - [upcall](https://github.com/daptong/sistem-terdistribusi/tree/main/upcall)
 
 #### - (m): modified
+
+## Frequently used commands
+```bash
+docker compose -f compose/<name>.yml up -d
+docker compose -f compose/<name>.yml exec <name>-<client/server> python <client/server>.py
+docker compose -f compose/<name>.yml down
+```
+
+```bash
+ip a
+sudo tcpdump -nvi <bridge_interface> -w <name>.pcap
+```
