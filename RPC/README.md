@@ -94,3 +94,21 @@ Karena JSON memiliki data yang panjang, maka dikirim secara bertahap yang dibagi
 Server membalas HTTP POST client dengan HTTP/1.0 200 OK serta JSON-nya (hasil RPC)
 - Baris 13-14:<br>
 Client mengirimkan packet FIN, ACK untuk menutup koneksi antara client dan server
+
+##
+<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHBqY3dteDg1ZXA5eDNrOG40dzFhNHdzdnBpejFpdGd2cGRzN3IzdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QWKRnzSNS0blouiZIY/giphy.gif"><br>
+Pada eksplorasi RPC ini, program yang dibuat adalah program yang mengembalikan number words dalam tipe data string menjadi angka, contohnya:
+```bash
+one two three four: 1234
+```
+
+Program ini me-list semua kata dan angka dalam bentuk string menggunakan dictionary, lalu program akan mensplit input dari user tersebut dan mencari masing-masing elemen pada string di dictionary tersebut
+```
+dictionary = 
+{"zero": "0", "one": "1", "two": "2", "three": "3", "four": "4", "five": "5", "six": "6", "seven": "7", "eight": "8", "nine": "9"}
+
+res = ''.join(dictionary[i] for i in a.split())
+return res
+```
+
+Program ini tetap menggunakan HTTP dan JSON untuk mengirimkan data, dimana awalnya program akan membentuk header dalam bentuk JSON lalu mengirimkan datanya ke server. Ketika server sudah mendapatkan data tersebut, server akan membaca data yang dikirimkan menggunakan JSONRPCResponseManager oleh client lalu memprosesnya (converting) lalu server akan mengirimkan kembali hasil convertnya menggunakan HTTP dan JSON
